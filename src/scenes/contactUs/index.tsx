@@ -10,7 +10,7 @@ type Props = {
 }
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-    const inputStyles = `"w-full rounded-lg bg-primary-300 px-5 py-3 text-white"`
+
     const {
         register,
         trigger,
@@ -68,7 +68,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                             method= "POST"
                     >
                         <input
-                        className = "w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white"
+                        className = " mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white"
                         type="text"
                         placeholder="NAME"
                         {...register("name", {
@@ -84,7 +84,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                             </p>
                         )}
                         <input
-                        className = "w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white"
+                        className = "mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white"
                         type="text"
                         placeholder="EMAIL"
                         {...register("email", {
@@ -99,9 +99,11 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                                 {errors.email.type === "pattern" && "invalid email address."}
                             </p>
                         )}
-                        <input
-                        className = "w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white"
-                        type="text"
+                        <textarea
+                        className = "mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white"
+                        
+                        rows={4}
+                        cols={50}
                         placeholder="Message"
                         {...register(" message", {
                             required: true,
@@ -121,6 +123,24 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                             SUBMIT
                         </button>
                         </form>
+                    </motion.div>
+                    <motion.div className="relative mt-16 basis-2/5 md:mt-0"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{ delay:0.2, duration: 1 }}
+                    variants={{
+                        hidden: { opacity: 0, x: -100 },
+                        visible: { opacity: 1, x: 0 },
+
+                    }}
+                    >
+                    
+                    <div className="md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]">
+                        <img 
+                        className="w-full" alt="contact-us-page-graphic" src={ContactUsPageGraphic}
+                        />
+                    </div>
                     </motion.div>
                 </div>
             </motion.div>
