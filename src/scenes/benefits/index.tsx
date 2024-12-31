@@ -53,7 +53,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     visible: { opacity: 1, x: 0 },
 
                 }}
-                className="md:my-5 md:w-3/5">
+                className="md:mt-24  md:w-3/5">
                 <HText>MORE THAN JUST A GYM.</HText>
                 <p className="my-5 text-sm">We provide world class fitness equipment, trainers and classes to get you to utilize fitness goals with ease. we provide true care into each and every member.</p>
             </motion.div>
