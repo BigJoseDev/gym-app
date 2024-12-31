@@ -114,12 +114,12 @@ const Benefits = ({ setSelectedPage }: Props) => {
     
                     }}
                     >
-                        <p className="my-5 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, explicabo magnam ad architecto vitae eligendi consequatur! Tempora, corporis, praesentium doloremque laborum, perferendis in aliquid eligendi voluptatem alias sint modi deleniti?</p>
-                        <p className="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem alias deserunt voluptatibus similique molestiae debitis sapiente ducimus. Quisquam et minima eum ipsum nobis quia dolore ipsa deleniti, expedita molestias ducimus!</p>
+                        {/* <p className="my-5 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, explicabo magnam ad architecto vitae eligendi consequatur! Tempora, corporis, praesentium doloremque laborum, perferendis in aliquid eligendi voluptatem alias sint modi deleniti?</p>
+                        <p className="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem alias deserunt voluptatibus similique molestiae debitis sapiente ducimus. Quisquam et minima eum ipsum nobis quia dolore ipsa deleniti, expedita molestias ducimus!</p> */}
                     </motion.div>
                     {/* button */}
                     <div className="relative mt-16">
-                        <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                        <div className="before:absolute before:-bottom-10 before:right-5 before:z-[-1] before:content-sparkles">
                             <ActionButton setSelectedPage={setSelectedPage}>
                                 Join Now
                             </ActionButton>

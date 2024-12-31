@@ -51,8 +51,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                     <motion.div
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
-                        transition={{ duration: 1 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.5 }}
                         variants={{
                             hidden: { opacity: 0, y: 100 },
                             visible: { opacity: 1, y: 0 },
@@ -127,7 +127,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                     <motion.div className="relative mt-16 basis-2/5 md:mt-0"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
                     transition={{ delay:0.2, duration: 1 }}
                     variants={{
                         hidden: { opacity: 0, x: -100 },
